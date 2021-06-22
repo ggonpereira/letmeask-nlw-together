@@ -1,5 +1,5 @@
 <h4 align="center">
-<img src="###########" width="40%" /><br>
+<img src="/src/assets/images/logo.svg" width="40%" /><br>
  <h1 align="center">Letmeask - NLW Together 🤗</h1> 
 </h4>
 
@@ -21,7 +21,7 @@
 <h2>Preview 💻📱</h2>
 
 <p align="center">
-   <img src="###########" width="90%" alt="Project Demo"/>
+   <img src="/src/demo/demo.jpg" width="90%" alt="Project Demo"/>
 </p>
 
 ---
@@ -31,6 +31,7 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [Firebase](https://firebase.google.com/)
 - [React](https://pt-br.reactjs.org/)
+- [Sass](https://sass-lang.com/)
 
 ---
 

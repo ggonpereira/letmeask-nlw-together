@@ -21,7 +21,7 @@
 <h2>Preview 💻📱</h2>
 
 <p align="center">
-   <img src="/src/demo/demo.jpg" width="90%" alt="Project Demo"/>
+   <img src="/src/assets/images/demo/demo.jpg" width="90%" alt="Project Demo"/>
 </p>
 
 ---

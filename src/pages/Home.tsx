@@ -1,12 +1,13 @@
 import { useHistory } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
 
-import illustrationImg from "../assets/images/illustration.svg";
-import logoImg from "../assets/images/logo.svg";
+import illustrationImg from "../assets/images/illustration.png";
+import logoImg from "../assets/images/logo.png";
 import googleIconImg from "../assets/images/google-icon.svg";
 
 import { database } from "../services/firebase";
 
-import { Button } from "../components/Button";
+import { Button } from "../components/Button/index";
 import { useAuth } from "../hooks/useAuth";
 
 import "../styles/auth.scss";
@@ -33,7 +34,12 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if (!roomRef.exists()) {
-      alert("Room does not exists.");
+      toast.error("Room does not exists.");
+      return;
+    }
+
+    if (roomRef.val().endedAt) {
+      toast.error("Room already closed.");
       return;
     }
 
@@ -42,6 +48,7 @@ export function Home() {
 
   return (
     <div id="page-auth">
+      <Toaster />
       <aside>
         <img
           src={illustrationImg}

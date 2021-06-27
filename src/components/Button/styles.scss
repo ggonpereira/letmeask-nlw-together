@@ -1,9 +1,11 @@
+@import "../../styles/utilities/variables";
+
 .button {
   height: 50px;
   border-radius: 8px;
   font-weight: 500;
-  background: #835afd;
-  color: #fff;
+  background: $primary-color;
+  color: $white;
   padding: 0 32px;
 
   display: flex;
@@ -13,10 +15,21 @@
   cursor: pointer;
   border: 0;
 
-  transition: filter 0.2s;
+  transition: filter, background-color 0.2s;
 
   img {
     margin-right: 8px;
+  }
+
+  &.outlined {
+    background: $white;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+
+  #page-room &:not(:disabled):hover {
+    background-color: $primary-color;
+    color: $white;
   }
 
   &:not(:disabled):hover {

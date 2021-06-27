@@ -1,5 +1,5 @@
 <h4 align="center">
-<img src="/src/assets/images/logo.svg" width="40%" /><br>
+<img src="/src/assets/images/logo.png" width="40%" /><br>
  <h1 align="center">Letmeask - NLW Together 🤗</h1> 
 </h4>
 

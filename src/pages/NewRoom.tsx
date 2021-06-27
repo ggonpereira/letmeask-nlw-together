@@ -3,10 +3,10 @@ import { Link, useHistory } from "react-router-dom";
 
 // import { AuthContext } from "../contexts/AuthContext";
 
-import illustrationImg from "../assets/images/illustration.svg";
-import logoImg from "../assets/images/logo.svg";
+import illustrationImg from "../assets/images/illustration.png";
+import logoImg from "../assets/images/logo.png";
 
-import { Button } from "../components/Button";
+import { Button } from "../components/Button/index";
 import { database } from "../services/firebase";
 import { useAuth } from "../hooks/useAuth";
 
